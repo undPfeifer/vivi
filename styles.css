@@ -64,6 +64,12 @@
 
 :root {
     --font-size: 1.6rem;
+
+    --color-one: #00A650;
+
+    --color-two:  #f8ecf8;
+
+    --color-two-save: #f8ecf8;
 }
 
 
@@ -76,9 +82,13 @@
         line-height: 0.9;
 
         padding: 12px;
+        cursor: url('img/cursor.png') 40 40, auto;
+
+
     }
     * {
         body {-webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased;}
+
     }
 
     p {
@@ -271,7 +281,7 @@ HEADER*/
 
     
     /* background-color: rgb(245, 245, 195); */
-    background-color: #f8ecf8;
+    background-color: var(--color-two);
 
 
 }
@@ -311,7 +321,7 @@ HEADER*/
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #f8ecf8;
+    background-color: var(--color-two);
 }
 
 
@@ -321,6 +331,7 @@ HEADER*/
     justify-self: end;
     grid-column: 1/-1;
     margin-right: 16px;
+    filter: grayscale();
 }
 
 
