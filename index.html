@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+<div class="nav--container">
+        <ul class="geist--bold_s nav--container"> 
+            <li class="link"> home </li>
+            <li class="link"> kontakt </li> 
+            <li class="link"> about </li>
+        </ul>
+</div>
+
+<div class="header--grid_container"> 
+    <h1 class="times--reg_xl green heading-name">vivi ammann</h1>
+    <p class="times--reg_s green"> mein name ist viviane (aber lieber vivi) ammann, ich bin grafikerin
+        aus zürich und bestreite gerade das dritte semester eines kommunikationsstudiums
+        mit vertiefung journalismus an der zhaw. ans stillsitzen
+        habe ich mich allerdings nie gewöhnt.</p>
+    <p class="times--reg_s green"> <span class="typo--spacer"> </span>nach einigen einsätzen hinter der bar an festivals und ausreichlich
+        erfahrung auf der anderen seite des tresens, möchte ich nun
+        meiner langwährenden vision und lust, mich in der gastronomie zu
+        versuchen, eine chance geben.</p>
+</div>
+
+
+
+
+<section class="main--section_container"> 
+
+
+    <div class="left--grid_container"> 
+
+        <div class="about--grid_container left--grid_spanfull">
+            <p class="geist--bold_s green lineheight--1-1"> nationalität <br>
+                heimatsort <br>
+                sprachen
+            </p>
+            <p class="geist--bold_s lineheight--1-1" > schweiz <br>
+                zürich zh <br>
+                deutsch (muttersprache) <br>
+                englisch (sehr gute kenntnisse) <br>
+            </p>
+        </div>
+
+        <img src="img/cv-vivi-ammann-2024.jpeg" alt="" class="img--portrait">
+
+
+    </div>
+
+
+            <div class="cv--grid_container"> 
+                <div class="laufbahn--section"> </div>
+                    <p class="geist--reg_s"> <span class="geist--bold_s span--heading">erfahrung gestaltung</span> </br> 
+                        branding, editorial
+                        design, webdesign,
+                        fotografie, illustration,
+                        druckvorstufe,
+                        video und audio
+                        editing
+                    </p>
+
+                    <p class="geist--reg_s"> <span class="geist--bold_s span--heading">programme</span> </br> 
+                        adobe indesign,
+                        photoshop, illustrator,
+                        after effects,
+                        xd, premiere pro,
+                        audition und figma
+                    </p>
+            </div>
+        
+
+
+
+        <!--
+ <div id="TypoFormats"> 
+            <h1 class="times--reg_xl">vivi ammann</h1>
+                    <h2 class="times--reg_l">viviane ammann
+                        badenerstrasse 361
+                        8003 Zürich
+                        076 415 89 06
+                        viviane.ammann@gmx.ch
+                        viviammann.ch</h2>
+                    <p class="geist--bold_s">englisch
+                        (sehr gute kenntnisse),
+                        französisch
+                        (grundkenntnisse)</p>
+                    <p class="geist--reg_s">branding, editorial
+                        design, webdesign,
+                        fotografie, illustration, druckvorstufe,
+                        video und audio
+                        editing</p>
+                    <p class="times--reg_m green">mein name ist viviane (aber lieber vivi) ammann, ich bin grafikerin
+                        aus zürich und bestreite gerade das dritte semester eines kommunikationsstudiums mit vertiefung journalismus</p>
+        </div> 
+ -->
+
+</section>
+
+
+    
+
+</body>
+
+
+
+
+
+
+
+
+<script> 
+
+
+
+
+    const cvElementArray = [
+
+
+
+        { 
+        date: 'seit 2023' , 
+        text: 'studium kommunikation,' , 
+        firma: 'zhaw'
+        } ,
+        
+
+        { 
+        date: '2020 – 2022' , 
+        text: 'junior grafikerin bis zur  junior art director motion design und grafik' , 
+        firma: 'zense gmbh'
+        } ,
+
+
+        
+        { 
+        date: 'seit 2019' , 
+        text: 'selbstständige grafikerin' , 
+        firma: ''
+        } , 
+
+        {
+        date: '2018 – 2020' ,
+        text: 'berufsmaturität ausrichtung gestaltung und kunst,' ,
+        firma: 'berufsmaturitätsschule zürich'
+        }  , 
+
+        { 
+        date: '2013 – 2018' , 
+        text: 'ausbildung grafikerin efz' , 
+        firma: 'unit38 communications gmbh'
+        } ,
+
+        { 
+        date: '2013 – 2014' , 
+        text: 'gestalterischer vorkurs' , 
+        firma: 'schule für gestaltung zürich'
+        } ,
+
+        { 
+        date: '2010 – 2013' , 
+        text: 'sekundarschule bonstetten' , 
+        firma: 'schule für gestaltung zürich'
+        } ,
+
+    ] ;
+
+/* old function
+    function createLebenslauf (vDate) {
+        const container = document.createElement('div');
+            document.body.appendChild(container);
+        const date = document.createElement('p');
+            date.classList.add('geist--bold_s');
+            date.classList.add('green')
+            date.innerText= vDate;
+            container.appendChild(date);
+        const text = document.createElement('p');
+    }
+ */
+
+    const laufbahnSection = document.querySelector('.laufbahn--section')
+
+
+
+    function cvInnerHtml(vDate , vText , vFirma) {
+        const container = document.createElement('div');
+            container.classList.add('cv--element_container')
+            container.classList.add('max-width--s') 
+        container.innerHTML= 
+    `
+        <div class='cv--element_container'> 
+            <p class='geist--bold_s green numbers'> ${vDate}</p>
+            <p class='times--reg_l'> ${vText}</p>
+            <p class='geist--bold_s'> ${vFirma} </p>
+        </div>
+    ` ;
+    laufbahnSection.appendChild(container);
+        
+    }
+    
+    // createLebenslauf('hello');
+
+
+    cvElementArray.forEach(e => {
+        cvInnerHtml(e.date , e.text , e.firma)
+    })
+
+</script>
+
+
+
+</html>

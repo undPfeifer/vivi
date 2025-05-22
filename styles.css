@@ -1,0 +1,398 @@
+    /* #region @fontface */
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-Thin.otf') format('opentype');
+        font-weight: 100;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-UltraLight.otf') format('opentype');
+        font-weight: 200;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-Light.otf') format('opentype');
+        font-weight: 300;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-Regular.otf') format('opentype');
+        font-weight: 400;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-Medium.otf') format('opentype');
+        font-weight: 500;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-SemiBold.otf') format('opentype');
+        font-weight: 600;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-Bold.otf') format('opentype');
+        font-weight: 700;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-Black.otf') format('opentype');
+        font-weight: 800;
+    }
+    
+    @font-face {
+        font-family: 'Geist';
+        src: url('fonts/Geist-UltraBlack.otf') format('opentype');
+        font-weight: 900;
+    }
+
+/* #endregion */
+
+
+  html {
+    font-size: 62.5%;
+    font-size: 55%;
+  }
+
+:root {
+    --font-size: 1.6rem;
+}
+
+
+
+
+/* BASE ELEMENTS --x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i*/
+
+    body {
+        font-family: 'Geist', sans-serif;
+        line-height: 0.9;
+
+        padding: 12px;
+    }
+    * {
+        body {-webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -o-font-smoothing: antialiased;}
+    }
+
+    p {
+        margin: 0px;
+        font-weight: 500;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+    h2 {
+        margin: 0px;
+    }
+
+
+
+    ul {
+        all: unset;
+    }
+
+    li {
+        all: unset;
+    }
+
+
+    .link {
+        cursor: pointer;
+    }
+    .link:hover {
+        font-style: italic;
+    }
+    .link:active {
+        color: #00A650;
+    }
+
+
+
+/* BASE ELEMENTS --x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i*/
+
+
+
+
+
+/* TYPOGRAPHY --x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i*/
+
+
+    .geist--bold_s{
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 1.;
+        
+    }
+
+    .lineheight--1-1 {
+        line-height: 1.1;
+    }
+
+    .geist--reg_s {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 1.1;
+
+    }
+
+    .geist--bold_m {
+        font-size: 2.4rem;
+        font-weight: 500;
+
+    }
+
+    .times--reg_s {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.1;
+    }
+
+
+    .times--reg_m {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.4rem;
+        line-height: 1;
+    }
+
+    .times--reg_l {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2.8rem;   
+        line-height: .83;
+        margin-bottom: 4px;
+    }
+
+    .times--reg_l:hover {
+        cursor: pointer;
+        color: #00A650;
+    }
+
+    .times--reg_xl {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 4.8rem;
+        font-weight: 400;
+    }
+
+    .geist{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    }
+    .geist.bold{
+        font-weight: 600;
+
+    }
+
+
+
+
+
+
+    .green{ 
+        color: #00A650;
+    }
+
+    .numbers {
+        font-size: calc(var(--font-size) - 2px);
+    }
+
+    .span--heading{
+    display: inline-block;
+    margin-bottom: 6px;
+    }
+
+    .typo--spacer {
+        display: inline-block;
+        width: 20px;
+    }
+
+
+    .max-width--s{
+        max-width: 380px;
+    }
+
+
+    .heading-name{
+        margin-top: -18px;
+    }
+
+
+/* TYPOGRAPHY --x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i--x--i*/
+
+
+
+/*HEADER 
+o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---
+HEADER*/
+
+
+.header--grid_container {
+    display: grid;
+    grid-template-columns: 2fr 3fr 3fr;
+    gap: 12px;
+
+
+    padding-top: 60px;
+    padding-bottom: 80px;
+
+
+
+}
+
+
+
+
+
+
+/*HEADER 
+o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---o---x---
+HEADER*/
+
+
+.nav--container {
+    display: flex;
+    gap: 8px;
+}
+
+
+.main--section_container{
+    display: grid;
+    grid-template-columns: 64fr 66fr;
+
+
+
+    
+    /* background-color: rgb(245, 245, 195); */
+    background-color: #f8ecf8;
+
+
+}
+
+
+.cv--grid_container {
+    padding-bottom: 3px;
+    padding-top: 3px;
+
+    display: grid;
+    grid-template-columns: minmax(240px ,320px) minmax(100px, 200px) minmax(100px, 200px);
+    grid-auto-rows: auto;         
+    gap: 8px;  
+    
+
+
+    /* background-color: rgb(215, 250, 236); */
+
+}
+
+
+
+
+.cv--element_container{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+
+}
+
+
+
+
+.laufbahn--section {
+
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f8ecf8;
+}
+
+
+
+.img--portrait {
+    max-width: 300px;
+    justify-self: end;
+    grid-column: 1/-1;
+    margin-right: 16px;
+}
+
+
+
+
+
+
+  .about--grid_container{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr  2fr;
+  }
+
+
+  .left--grid_container{
+    padding-bottom: 80px;
+
+
+    width: auto;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+
+    background-image: url('img/kreis.svg');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100% 100%; /* Resize the background image to cover the entire container */
+  }
+
+  .left--grid_spanfull{
+    grid-column: 1/-1;
+  }
+
+
+  @media (max-width: 740px) { /* Adjust if your gap is bigger than 20px */
+    
+    .header--grid_container {
+        grid-template-columns: 1fr;
+    }
+    
+    
+    .cv--grid_container {
+      grid-template-columns: 1fr 1fr; /* Stack into one column */
+        gap: 20px;
+    }
+
+    .laufbahn--section {
+        grid-column: 1/-1;
+        width: 100%;
+    }
+
+    .main--section_container {
+        grid-template-columns: 1fr;
+    }
+    .left--grid_container {
+        gap: 36px;
+
+    }
+
+
+
+    .img--portrait {
+        margin: 0px;
+    }
+
+    body {
+        padding: 2px;
+    }
+
+
+
+  }
